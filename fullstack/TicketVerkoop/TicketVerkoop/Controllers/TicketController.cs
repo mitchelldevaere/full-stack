@@ -9,12 +9,14 @@ namespace TicketVerkoop.Controllers
     public class TicketController : Controller
     {
         private IService<Match> _matchService;
+        private VakIService<Vak> _vakService;
         private readonly IMapper _mapper;
 
-        public TicketController(IMapper mapper, IService<Match> matchservice)
+        public TicketController(IMapper mapper, IService<Match> matchservice, VakIService<Vak> vakService)
         {
             _mapper = mapper;
             _matchService = matchservice;
+            _vakService = vakService;
         }
 
         public async Task<IActionResult> Index()
@@ -33,6 +35,9 @@ namespace TicketVerkoop.Controllers
 
             var match = await _matchService.FindById(Convert.ToInt16(id));
             MatchVM matchVM = _mapper.Map<MatchVM>(match);
+
+            var list = await _vakService.GetAll(Convert.ToInt16(match.StadionId));
+            List<VakVM> listVM = _mapper.Map<List<VakVM>>(list);
 
             ReserveringVM reservering = new ReserveringVM
             {

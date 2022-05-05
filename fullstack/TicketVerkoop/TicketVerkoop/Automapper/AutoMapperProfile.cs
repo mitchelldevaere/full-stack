@@ -14,6 +14,8 @@ namespace TicketVerkoop.Automapper
             CreateMap<Match, MatchVM>().ForMember(dest => dest.ThuisploegNaam, opts => opts.MapFrom(src => src.Thuisploeg.PloegNaam))
                                        .ForMember(dest => dest.UitploegNaam, opts => opts.MapFrom(src => src.Uitploeg.PloegNaam))
                                        .ForMember(dest => dest.StadionNaam, opts => opts.MapFrom(src => src.Stadion.StadionNaam));
+
+            CreateMap<Vak, VakVM>();
                                        
 
 

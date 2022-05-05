@@ -29,6 +29,9 @@ builder.Services.AddTransient<TicketVerkoopDbContext, TicketVerkoopDbContext>();
 builder.Services.AddTransient<IService<Match>, MatchService>();
 builder.Services.AddTransient<IDAO<Match>, MatchDAO>();
 
+builder.Services.AddTransient<VakIService<Vak>, VakService>();
+builder.Services.AddTransient<VakIDAO<Vak>, VakDAO>();
+
 
 var app = builder.Build();
 
