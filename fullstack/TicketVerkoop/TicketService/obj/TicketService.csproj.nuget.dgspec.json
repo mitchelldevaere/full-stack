@@ -1,0 +1,219 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\michi\\Desktop\\school\\jaar 2\\full stack\\eindopdracht\\opdracht\\full-stack\\fullstack\\TicketVerkoop\\TicketService\\TicketService.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\michi\\Desktop\\school\\jaar 2\\full stack\\eindopdracht\\opdracht\\full-stack\\fullstack\\TicketVerkoop\\TicketModels\\TicketModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\michi\\Desktop\\school\\jaar 2\\full stack\\eindopdracht\\opdracht\\full-stack\\fullstack\\TicketVerkoop\\TicketModels\\TicketModels.csproj",
+        "projectName": "TicketModels",
+        "projectPath": "C:\\Users\\michi\\Desktop\\school\\jaar 2\\full stack\\eindopdracht\\opdracht\\full-stack\\fullstack\\TicketVerkoop\\TicketModels\\TicketModels.csproj",
+        "packagesPath": "C:\\Users\\michi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\michi\\Desktop\\school\\jaar 2\\full stack\\eindopdracht\\opdracht\\full-stack\\fullstack\\TicketVerkoop\\TicketModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\michi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.13, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200-preview.22055.15\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\michi\\Desktop\\school\\jaar 2\\full stack\\eindopdracht\\opdracht\\full-stack\\fullstack\\TicketVerkoop\\TicketRepositories\\TicketRepositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\michi\\Desktop\\school\\jaar 2\\full stack\\eindopdracht\\opdracht\\full-stack\\fullstack\\TicketVerkoop\\TicketRepositories\\TicketRepositories.csproj",
+        "projectName": "TicketRepositories",
+        "projectPath": "C:\\Users\\michi\\Desktop\\school\\jaar 2\\full stack\\eindopdracht\\opdracht\\full-stack\\fullstack\\TicketVerkoop\\TicketRepositories\\TicketRepositories.csproj",
+        "packagesPath": "C:\\Users\\michi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\michi\\Desktop\\school\\jaar 2\\full stack\\eindopdracht\\opdracht\\full-stack\\fullstack\\TicketVerkoop\\TicketRepositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\michi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\michi\\Desktop\\school\\jaar 2\\full stack\\eindopdracht\\opdracht\\full-stack\\fullstack\\TicketVerkoop\\TicketModels\\TicketModels.csproj": {
+                "projectPath": "C:\\Users\\michi\\Desktop\\school\\jaar 2\\full stack\\eindopdracht\\opdracht\\full-stack\\fullstack\\TicketVerkoop\\TicketModels\\TicketModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200-preview.22055.15\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\michi\\Desktop\\school\\jaar 2\\full stack\\eindopdracht\\opdracht\\full-stack\\fullstack\\TicketVerkoop\\TicketService\\TicketService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\michi\\Desktop\\school\\jaar 2\\full stack\\eindopdracht\\opdracht\\full-stack\\fullstack\\TicketVerkoop\\TicketService\\TicketService.csproj",
+        "projectName": "TicketService",
+        "projectPath": "C:\\Users\\michi\\Desktop\\school\\jaar 2\\full stack\\eindopdracht\\opdracht\\full-stack\\fullstack\\TicketVerkoop\\TicketService\\TicketService.csproj",
+        "packagesPath": "C:\\Users\\michi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\michi\\Desktop\\school\\jaar 2\\full stack\\eindopdracht\\opdracht\\full-stack\\fullstack\\TicketVerkoop\\TicketService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\michi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\michi\\Desktop\\school\\jaar 2\\full stack\\eindopdracht\\opdracht\\full-stack\\fullstack\\TicketVerkoop\\TicketModels\\TicketModels.csproj": {
+                "projectPath": "C:\\Users\\michi\\Desktop\\school\\jaar 2\\full stack\\eindopdracht\\opdracht\\full-stack\\fullstack\\TicketVerkoop\\TicketModels\\TicketModels.csproj"
+              },
+              "C:\\Users\\michi\\Desktop\\school\\jaar 2\\full stack\\eindopdracht\\opdracht\\full-stack\\fullstack\\TicketVerkoop\\TicketRepositories\\TicketRepositories.csproj": {
+                "projectPath": "C:\\Users\\michi\\Desktop\\school\\jaar 2\\full stack\\eindopdracht\\opdracht\\full-stack\\fullstack\\TicketVerkoop\\TicketRepositories\\TicketRepositories.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200-preview.22055.15\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

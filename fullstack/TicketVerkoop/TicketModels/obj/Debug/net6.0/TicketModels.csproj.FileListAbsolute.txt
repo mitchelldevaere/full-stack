@@ -1,0 +1,56 @@
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketModels\bin\Debug\net6.0\TicketModels.deps.json
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketModels\bin\Debug\net6.0\TicketModels.runtimeconfig.json
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketModels\bin\Debug\net6.0\TicketModels.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketModels\bin\Debug\net6.0\TicketModels.pdb
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.csproj.AssemblyReference.cache
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.AssemblyInfoInputs.cache
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.AssemblyInfo.cs
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.csproj.CoreCompileInputs.cache
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketModels\obj\Debug\net6.0\refint\TicketModels.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.pdb
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.genruntimeconfig.cache
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketModels\obj\Debug\net6.0\ref\TicketModels.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketModels\bin\Debug\net6.0\TicketModels.deps.json
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketModels\bin\Debug\net6.0\TicketModels.runtimeconfig.json
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketModels\bin\Debug\net6.0\TicketModels.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketModels\bin\Debug\net6.0\TicketModels.pdb
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.csproj.AssemblyReference.cache
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.AssemblyInfoInputs.cache
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.AssemblyInfo.cs
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.csproj.CoreCompileInputs.cache
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketModels\obj\Debug\net6.0\refint\TicketModels.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.pdb
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.genruntimeconfig.cache
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketModels\obj\Debug\net6.0\ref\TicketModels.dll
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketModels\bin\Debug\net6.0\TicketModels.deps.json
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketModels\bin\Debug\net6.0\TicketModels.runtimeconfig.json
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketModels\bin\Debug\net6.0\TicketModels.dll
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketModels\bin\Debug\net6.0\TicketModels.pdb
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.csproj.AssemblyReference.cache
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.AssemblyInfoInputs.cache
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.AssemblyInfo.cs
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.csproj.CoreCompileInputs.cache
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.dll
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketModels\obj\Debug\net6.0\refint\TicketModels.dll
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.pdb
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.genruntimeconfig.cache
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketModels\obj\Debug\net6.0\ref\TicketModels.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketModels\bin\Debug\net6.0\TicketModels.deps.json
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketModels\bin\Debug\net6.0\TicketModels.runtimeconfig.json
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketModels\bin\Debug\net6.0\TicketModels.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketModels\bin\Debug\net6.0\TicketModels.pdb
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.csproj.AssemblyReference.cache
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.AssemblyInfoInputs.cache
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.AssemblyInfo.cs
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.csproj.CoreCompileInputs.cache
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketModels\obj\Debug\net6.0\refint\TicketModels.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.pdb
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketModels\obj\Debug\net6.0\TicketModels.genruntimeconfig.cache
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketModels\obj\Debug\net6.0\ref\TicketModels.dll

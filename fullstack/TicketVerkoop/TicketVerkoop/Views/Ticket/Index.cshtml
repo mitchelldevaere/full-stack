@@ -1,0 +1,57 @@
+﻿@model IEnumerable<TicketVerkoop.ViewModels.MatchVM>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Matchen</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MatchID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ThuisploegNaam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UitploegNaam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Datum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StadionNaam)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MatchID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ThuisploegNaam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UitploegNaam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Datum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StadionNaam)
+            </td>
+            <td>
+                @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+                 <a asp-action="Select" asp-route-id="@item.MatchID">Bestel nu je tickets</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

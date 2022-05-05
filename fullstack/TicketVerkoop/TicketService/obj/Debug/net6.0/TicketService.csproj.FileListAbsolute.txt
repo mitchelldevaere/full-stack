@@ -1,0 +1,68 @@
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketService.deps.json
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketService.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketService.pdb
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketModels.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketRepositories.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketModels.pdb
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketRepositories.pdb
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.csproj.AssemblyReference.cache
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.AssemblyInfoInputs.cache
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.AssemblyInfo.cs
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.csproj.CoreCompileInputs.cache
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.csproj.CopyComplete
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketService\obj\Debug\net6.0\refint\TicketService.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.pdb
+C:\Users\michi\Desktop\school\jaar 2\full stack\sem 2\oefeningen\TicketVerkoop\TicketService\obj\Debug\net6.0\ref\TicketService.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketService.deps.json
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketService.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketService.pdb
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketModels.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketRepositories.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketModels.pdb
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketRepositories.pdb
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.csproj.AssemblyReference.cache
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.AssemblyInfoInputs.cache
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.AssemblyInfo.cs
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.csproj.CoreCompileInputs.cache
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.csproj.CopyComplete
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketService\obj\Debug\net6.0\refint\TicketService.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.pdb
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\TicketVerkoop\TicketService\obj\Debug\net6.0\ref\TicketService.dll
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketService.deps.json
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketService.dll
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketService.pdb
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketModels.dll
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketRepositories.dll
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketModels.pdb
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketRepositories.pdb
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.csproj.AssemblyReference.cache
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.GeneratedMSBuildEditorConfig.editorconfig
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.AssemblyInfoInputs.cache
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.AssemblyInfo.cs
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.csproj.CoreCompileInputs.cache
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.csproj.CopyComplete
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.dll
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketService\obj\Debug\net6.0\refint\TicketService.dll
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.pdb
+C:\2SD\full stack development\semester 2\Eindopdracht v2\fullstack\TicketVerkoop\TicketService\obj\Debug\net6.0\ref\TicketService.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketService.deps.json
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketService.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketService.pdb
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketModels.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketRepositories.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketModels.pdb
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketService\bin\Debug\net6.0\TicketRepositories.pdb
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.csproj.AssemblyReference.cache
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.AssemblyInfoInputs.cache
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.AssemblyInfo.cs
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.csproj.CoreCompileInputs.cache
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.csproj.CopyComplete
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketService\obj\Debug\net6.0\refint\TicketService.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketService\obj\Debug\net6.0\TicketService.pdb
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\fullstack\TicketVerkoop\TicketService\obj\Debug\net6.0\ref\TicketService.dll

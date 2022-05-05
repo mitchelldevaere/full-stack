@@ -1,0 +1,40 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.websitenaam{
+    color: darkblue;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url(../img/page_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+        
+    margin: auto;
+}
+
+.btn_bestel{
+    color:dodgerblue;
+}
+.btn_bestel:hover{
+    color:springgreen;
+}
+
