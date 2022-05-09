@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using TicketVerkoop.Extensions;
 using TicketVerkoop.ViewModels;
 
@@ -42,30 +43,13 @@ namespace TicketVerkoop.Controllers
                 return View("Index", null);
             }
             return View("Index", shopping);
+        }
 
-
-
-
-
-            //if(biernr == null)
-            //{
-            //      return ntoFound()
-            //}
-
-            //ShoppingCartVM cartList = HttpContext.Session.GetObject<ShoppingCartVM>("ShoppingCart");
-
-            //CartVM? itemToRemove = cartList?.Cart?.FirstOrDefault(r => r.Biernr == biernr);
-            ////db.bieren.FirstOrDefault(r =>
-            //
-            //if(itemToRemove != null)
-            //{
-            //
-            //  CartList?.Remove(itemToRemove);
-            //  HttpContext.Session.SetObject("ShoppingCart", cartList);
-            //
-            //}
-            //
-            //return View("Index", cartList);
+        [Authorize]
+        [HttpPost]
+        public ActionResult Payment(List<CartVM> carts)
+        {
+            return View();
         }
     }
 }

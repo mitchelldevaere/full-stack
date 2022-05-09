@@ -50,7 +50,8 @@ namespace TicketVerkoop.Controllers
                 Datum = matchVM.Datum,
                 Stadion = matchVM.StadionNaam,
                 Aantal = 0,
-                Vaknaam = null
+                Vaknaam = null,
+                Type = "Ticket"
             };
 
             return View(reservering);

@@ -240,6 +240,8 @@ namespace TicketModels.Data
 
                 entity.Property(e => e.PlaatsId).HasColumnName("PlaatsID");
 
+                entity.Property(e => e.Type).HasMaxLength(50);
+
                 entity.Property(e => e.UserId)
                     .HasMaxLength(450)
                     .HasColumnName("UserID");

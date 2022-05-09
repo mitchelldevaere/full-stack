@@ -9,6 +9,6 @@
         public string Stadion { get; set; }
         public string Vaknaam { get; set; }
         public int? Aantal { get; set; }
-
+        public string? Type { get; set; }
     }
 }
