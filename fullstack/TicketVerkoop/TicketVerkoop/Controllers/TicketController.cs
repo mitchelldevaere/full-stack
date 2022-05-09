@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using TicketModels.Entities;
 using TicketService.interfaces;
+using TicketVerkoop.Extensions;
 using TicketVerkoop.ViewModels;
 
 namespace TicketVerkoop.Controllers
@@ -48,10 +49,56 @@ namespace TicketVerkoop.Controllers
                 Uitploeg = matchVM.UitploegNaam,
                 Datum = matchVM.Datum,
                 Stadion = matchVM.StadionNaam,
-                Aantal = 0
+                Aantal = 0,
+                Vaknaam = null
             };
 
             return View(reservering);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Select(ReserveringVM reservering, int vakID)
+        {
+            if(vakID == null)
+            {
+                return NotFound();
+            }
+
+            if (reservering == null)
+            {
+                return NotFound();
+            }
+
+            var vak = await _vakService.FindById(vakID);
+            VakVM vakVM = _mapper.Map<VakVM>(vak);
+
+            CartVM item = new CartVM
+            {
+                Thuisploeg = reservering.Thuisploeg,
+                Uitploeg = reservering.Uitploeg,
+                Datum = reservering.Datum,
+                DateCreated = DateTime.Now,
+                Stadion = reservering.Stadion,
+                Aantal = reservering.Aantal,
+                Vaknaam = vakVM.VakNaam,
+                Prijs = vakVM.Prijs
+            };
+
+            ShoppingCartVM? shopping;
+
+            if (HttpContext.Session.GetObject<ShoppingCartVM>("ShoppingCart") != null)
+            {
+                shopping = HttpContext.Session.GetObject<ShoppingCartVM>("ShoppingCart");
+            }
+            else
+            {
+                shopping = new ShoppingCartVM();
+                shopping.Cart = new List<CartVM>();
+            }
+            shopping.Cart.Add(item);
+            HttpContext.Session.SetObjects("ShoppingCart", shopping);
+
+            return RedirectToAction("Index", "ShoppingCart");
         }
     }
 }

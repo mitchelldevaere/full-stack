@@ -28,9 +28,22 @@ namespace TicketRepositories
             throw new NotImplementedException();
         }
 
-        public Task<Vak> FindById(int Id)
+        public async Task<Vak> FindById(int Id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return await _dbContext.Vaks
+                    .Include(b => b.Stadion)
+                    .Where(b => b.VakId == Id)
+                    .FirstOrDefaultAsync();
+                    
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error in DAO");
+                throw new Exception("error DAO beer");
+
+            }
         }
 
         public async Task<IEnumerable<Vak>> GetAll(int id)

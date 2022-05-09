@@ -32,6 +32,11 @@ builder.Services.AddTransient<IDAO<Match>, MatchDAO>();
 builder.Services.AddTransient<VakIService<Vak>, VakService>();
 builder.Services.AddTransient<VakIDAO<Vak>, VakDAO>();
 
+builder.Services.AddSession(options =>
+{
+    options.Cookie.Name = "be.VIVES.Session";
+    options.IdleTimeout = TimeSpan.FromMinutes(20);
+});
 
 var app = builder.Build();
 
@@ -49,6 +54,9 @@ else
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+//session
+app.UseSession();
 
 app.UseRouting();
 

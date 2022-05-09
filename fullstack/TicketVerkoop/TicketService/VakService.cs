@@ -30,7 +30,7 @@ namespace TicketService
 
         public Task<Vak> FindById(int Id)
         {
-            throw new NotImplementedException();
+            return _vakDAO.FindById(Id);
         }
 
         public async Task<IEnumerable<Vak>> GetAll(int id)
