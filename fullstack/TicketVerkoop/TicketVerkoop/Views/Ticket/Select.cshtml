@@ -33,6 +33,13 @@
                 <span asp-validation-for="Stadion" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label for="vaknr" class="vaknr">Vak</label>
+                <select name="vakID" id="vakID" asp-items="@ViewBag.lstVakken">
+                    <option>please select</option>
+                </select>
+                <span asp-validation-for="Vaknaam" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="Aantal" class="control-label"></label>
                 <input asp-for="Aantal" class="form-control" />
                 <span asp-validation-for="Aantal" class="text-danger"></span>

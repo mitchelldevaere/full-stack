@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using TicketModels.Entities;
 using TicketService.interfaces;
 using TicketVerkoop.ViewModels;
@@ -38,6 +39,8 @@ namespace TicketVerkoop.Controllers
 
             var list = await _vakService.GetAll(Convert.ToInt16(match.StadionId));
             List<VakVM> listVM = _mapper.Map<List<VakVM>>(list);
+
+            ViewBag.lstVakken = new SelectList(await _vakService.GetAll(Convert.ToInt16(match.StadionId)), "VakId", "VakNaam");
 
             ReserveringVM reservering = new ReserveringVM
             {
