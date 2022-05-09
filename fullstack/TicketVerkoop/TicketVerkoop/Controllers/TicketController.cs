@@ -80,7 +80,7 @@ namespace TicketVerkoop.Controllers
                 DateCreated = DateTime.Now,
                 Stadion = reservering.Stadion,
                 Aantal = reservering.Aantal,
-                Vaknaam = vakVM.VakNaam,
+                Vaknaam = vakVM.VakNaam,    
                 Prijs = vakVM.Prijs
             };
 

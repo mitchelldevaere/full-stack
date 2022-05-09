@@ -47,7 +47,7 @@
             {
 
                 <tr>
-                    @*@Html.HiddenFor(m => Model.Cart[i].Biernr)*@
+                    @Html.HiddenFor(m => Model.Cart[i].ReserveringId)
                     <td>
                         <input asp-for="@Model.Cart[i].Datum" readonly="readonly"
                                class="form-control" />
@@ -67,7 +67,7 @@
                         <input asp-for="@Model.Cart[i].Vaknaam" readonly="readonly"
                                class="form-control" />
 
-                    </td>
+                    </td>       
                     <td>
                         <input asp-for="@Model.Cart[i].Aantal" readonly="readonly"
                                class="form-control" />
@@ -89,13 +89,13 @@
                                type="number" readonly="readonly" />
                     </td>
 
-                    @*<td>
-                        <a asp-action="Delete" asp-route-bierNr="@Model.Cart[i].Biernr">
+                    <td>
+                        <a asp-action="Delete" asp-route-reserveringID="@Model.Cart[i].ReserveringId">
 
-                            <img src="~/Images/deleteButton.png" class="mand"/>
+                            <img src="~/img/deleteButton.png" class="mand"/>
                         </a>
 
-                    </td>*@
+                    </td>
                 </tr>
             }
             <tr>
@@ -115,11 +115,11 @@
     </form>
 }
 else
-{ @Html.Raw("Your shoppingcart is empty at the moment")
+{ @Html.Raw("Jouw winkelmandje is leeg op het moment")
 }
 
 
-<a asp-controller="Beer" asp-action="Index"> Continue</a>
+<a asp-controller="Ticket" asp-action="Index"> kies een ticket</a>
 @section Scripts {
      <script>
             // window.addL....("load", setup)
