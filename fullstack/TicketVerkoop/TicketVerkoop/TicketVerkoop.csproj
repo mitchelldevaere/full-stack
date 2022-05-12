@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="DinkToPdf" Version="1.0.8" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.4" />
@@ -24,6 +25,10 @@
   <ItemGroup>
     <ProjectReference Include="..\TicketModels\TicketModels.csproj" />
     <ProjectReference Include="..\TicketService\TicketService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\Controller\" />
   </ItemGroup>
 
 </Project>
