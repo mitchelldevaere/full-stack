@@ -8,7 +8,6 @@ namespace TicketModels.Entities
         public Stadion()
         {
             Matches = new HashSet<Match>();
-            Plaats = new HashSet<Plaat>();
             Ploegs = new HashSet<Ploeg>();
             Vaks = new HashSet<Vak>();
         }
@@ -18,7 +17,6 @@ namespace TicketModels.Entities
         public int PloegId { get; set; }
 
         public virtual ICollection<Match> Matches { get; set; }
-        public virtual ICollection<Plaat> Plaats { get; set; }
         public virtual ICollection<Ploeg> Ploegs { get; set; }
         public virtual ICollection<Vak> Vaks { get; set; }
     }

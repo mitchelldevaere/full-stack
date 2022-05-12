@@ -51,7 +51,9 @@ namespace TicketVerkoop.Controllers
                 Stadion = matchVM.StadionNaam,
                 Aantal = 0,
                 Vaknaam = null,
-                Type = "Ticket"
+                Type = "Ticket",
+                Cancelled = false,
+                MatchId = match.MatchId
             };
 
             return View(reservering);
@@ -81,8 +83,14 @@ namespace TicketVerkoop.Controllers
                 DateCreated = DateTime.Now,
                 Stadion = reservering.Stadion,
                 Aantal = reservering.Aantal,
-                Vaknaam = vakVM.VakNaam,    
-                Prijs = vakVM.Prijs
+                Vaknaam = vakVM.VakNaam,
+                Prijs = vakVM.Prijs,
+                Type = "Ticket",
+                Cancelled = false,
+                MatchId = reservering.MatchId,
+                VakId = vakID,
+                Abbonnement = null,
+                UserId = null
             };
 
             ShoppingCartVM? shopping;

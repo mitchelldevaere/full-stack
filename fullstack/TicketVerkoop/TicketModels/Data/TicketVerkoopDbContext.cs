@@ -192,16 +192,13 @@ namespace TicketModels.Data
             {
                 entity.HasKey(e => e.PlaatsId);
 
-                entity.Property(e => e.PlaatsId).HasColumnName("PlaatsID");
+                entity.Property(e => e.PlaatsId)
+                    .ValueGeneratedNever()
+                    .HasColumnName("PlaatsID");
 
                 entity.Property(e => e.StadionId).HasColumnName("StadionID");
 
                 entity.Property(e => e.VakId).HasColumnName("VakID");
-
-                entity.HasOne(d => d.Stadion)
-                    .WithMany(p => p.Plaats)
-                    .HasForeignKey(d => d.StadionId)
-                    .HasConstraintName("FK_Plaats_Stadion");
 
                 entity.HasOne(d => d.Vak)
                     .WithMany(p => p.Plaats)
@@ -238,13 +235,13 @@ namespace TicketModels.Data
 
                 entity.Property(e => e.MatchId).HasColumnName("MatchID");
 
-                entity.Property(e => e.PlaatsId).HasColumnName("PlaatsID");
-
                 entity.Property(e => e.Type).HasMaxLength(50);
 
                 entity.Property(e => e.UserId)
                     .HasMaxLength(450)
                     .HasColumnName("UserID");
+
+                entity.Property(e => e.VakId).HasColumnName("VakID");
 
                 entity.HasOne(d => d.AbbonnementNavigation)
                     .WithMany(p => p.Reserverings)
@@ -256,15 +253,20 @@ namespace TicketModels.Data
                     .HasForeignKey(d => d.MatchId)
                     .HasConstraintName("FK_Reservering_Match");
 
-                entity.HasOne(d => d.Plaats)
-                    .WithMany(p => p.Reserverings)
-                    .HasForeignKey(d => d.PlaatsId)
-                    .HasConstraintName("FK_Reservering_Plaats");
-
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.Reserverings)
                     .HasForeignKey(d => d.UserId)
                     .HasConstraintName("FK_Reservering_AspNetUsers");
+
+                entity.HasOne(d => d.Vak)
+                    .WithMany(p => p.Reserverings)
+                    .HasForeignKey(d => d.VakId)
+                    .HasConstraintName("FK_Reservering_Plaats");
+
+                entity.HasOne(d => d.VakNavigation)
+                    .WithMany(p => p.Reserverings)
+                    .HasForeignKey(d => d.VakId)
+                    .HasConstraintName("FK_Reservering_Vak1");
             });
 
             modelBuilder.Entity<Seizoen>(entity =>

@@ -10,12 +10,11 @@ namespace TicketModels.Entities
             Reserverings = new HashSet<Reservering>();
         }
 
-        public float PlaatsId { get; set; }
+        public int PlaatsId { get; set; }
         public int? VakId { get; set; }
         public int? StadionId { get; set; }
         public bool? Isbezet { get; set; }
 
-        public virtual Stadion? Stadion { get; set; }
         public virtual Vak? Vak { get; set; }
         public virtual ICollection<Reservering> Reserverings { get; set; }
     }

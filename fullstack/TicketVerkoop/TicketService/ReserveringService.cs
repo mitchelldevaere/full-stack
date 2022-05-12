@@ -11,9 +11,9 @@ namespace TicketService
 {
     public class ReserveringService : ReserveringIService<Reservering>
     {
-        private ReserveringIService<Reservering> _reserveringDAO;
+        private ReserveringIDAO<Reservering> _reserveringDAO;
 
-        public ReserveringService(ReserveringIService<Reservering> reserveringDAO) // DI
+        public ReserveringService(ReserveringIDAO<Reservering> reserveringDAO) // DI
         {
             _reserveringDAO = reserveringDAO;
         }

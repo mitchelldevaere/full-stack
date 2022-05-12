@@ -16,8 +16,9 @@ namespace TicketVerkoop.Automapper
                                        .ForMember(dest => dest.StadionNaam, opts => opts.MapFrom(src => src.Stadion.StadionNaam));
 
             CreateMap<Vak, VakVM>();
-                                       
 
+            CreateMap<Reservering, ReserveringVM>();
+            CreateMap<ReserveringVM, Reservering>();
 
         }
     }

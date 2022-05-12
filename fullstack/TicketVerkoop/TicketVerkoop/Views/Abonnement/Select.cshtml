@@ -1,0 +1,55 @@
+﻿@model TicketVerkoop.ViewModels.ReserveringVM
+
+@{
+    ViewData["Title"] = "Select";
+}
+
+<h1>Select</h1>
+
+<h4>ReserveringVM</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Select">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Thuisploeg" class="control-label"></label>
+                <input asp-for="Thuisploeg" class="form-control" />
+                <span asp-validation-for="Thuisploeg" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Uitploeg" class="control-label"></label>
+                <input asp-for="Uitploeg" class="form-control" />
+                <span asp-validation-for="Uitploeg" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Datum" class="control-label"></label>
+                <input asp-for="Datum" class="form-control" />
+                <span asp-validation-for="Datum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Stadion" class="control-label"></label>
+                <input asp-for="Stadion" class="form-control" />
+                <span asp-validation-for="Stadion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="ploegnr" class="ploegnr">Ploeg</label>
+                <select name="ploegID" id="ploegID" asp-items="@ViewBag.lstPloegen">
+                    <option>kies een ploeg</option>
+                </select>
+                <span asp-validation-for="Vaknaam" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
