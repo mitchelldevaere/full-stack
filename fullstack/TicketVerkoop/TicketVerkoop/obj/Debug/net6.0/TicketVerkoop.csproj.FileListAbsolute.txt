@@ -1216,3 +1216,13 @@ C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\full-stack
 C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\full-stack\fullstack\TicketVerkoop\TicketVerkoop\obj\Debug\net6.0\TicketVerkoop.genruntimeconfig.cache
 C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\full-stack\fullstack\TicketVerkoop\TicketVerkoop\obj\Debug\net6.0\ref\TicketVerkoop.dll
 C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\full-stack\fullstack\TicketVerkoop\TicketVerkoop\bin\Debug\net6.0\DinkToPdf.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\full-stack\fullstack\TicketVerkoop\TicketVerkoop\bin\Debug\net6.0\en\TicketVerkoop.resources.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\full-stack\fullstack\TicketVerkoop\TicketVerkoop\bin\Debug\net6.0\fr\TicketVerkoop.resources.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\full-stack\fullstack\TicketVerkoop\TicketVerkoop\bin\Debug\net6.0\nl\TicketVerkoop.resources.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\full-stack\fullstack\TicketVerkoop\TicketVerkoop\obj\Debug\net6.0\TicketVerkoop.csproj.GenerateResource.cache
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\full-stack\fullstack\TicketVerkoop\TicketVerkoop\obj\Debug\net6.0\en\TicketVerkoop.resources.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\full-stack\fullstack\TicketVerkoop\TicketVerkoop\obj\Debug\net6.0\fr\TicketVerkoop.resources.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\full-stack\fullstack\TicketVerkoop\TicketVerkoop\obj\Debug\net6.0\nl\TicketVerkoop.resources.dll
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\full-stack\fullstack\TicketVerkoop\TicketVerkoop\obj\Debug\net6.0\TicketVerkoop.Resources.Views.Home.Index.en.resources
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\full-stack\fullstack\TicketVerkoop\TicketVerkoop\obj\Debug\net6.0\TicketVerkoop.Resources.Views.Home.Index.fr.resources
+C:\Users\michi\Desktop\school\jaar 2\full stack\eindopdracht\opdracht\full-stack\fullstack\TicketVerkoop\TicketVerkoop\obj\Debug\net6.0\TicketVerkoop.Resources.Views.Home.Index.nl.resources

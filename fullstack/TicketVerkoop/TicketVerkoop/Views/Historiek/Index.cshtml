@@ -1,0 +1,100 @@
+﻿@model IEnumerable<TicketVerkoop.ViewModels.ReserveringVM>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+@if(Model != null)
+{
+    <table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ReserveringId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Thuisploeg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Uitploeg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Datum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Stadion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Vaknaam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Aantal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cancelled)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MatchId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReserveringId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Thuisploeg)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Uitploeg)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Datum)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Stadion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Vaknaam)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Aantal)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cancelled)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MatchId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserId)
+                </td>
+                <td>
+                    @if(item.Cancelled == false){
+                        <a asp-action="Select" asp-route-id="@item.ReserveringId">Annuleer</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+}else
+{
+    @Html.Raw("Je hebt nog geen Tickets besteld");
+}
+
+

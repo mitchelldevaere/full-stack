@@ -18,7 +18,6 @@ namespace TicketModels.Entities
         public virtual Abbonement? AbbonnementNavigation { get; set; }
         public virtual Match? Match { get; set; }
         public virtual AspNetUser? User { get; set; }
-        public virtual Plaat? Vak { get; set; }
-        public virtual Vak? VakNavigation { get; set; }
+        public virtual Vak? Vak { get; set; }
     }
 }

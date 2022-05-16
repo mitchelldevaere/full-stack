@@ -13,6 +13,11 @@
         <form asp-action="Select">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
+                <label asp-for="MatchId" class="control-label"></label>
+                <input asp-for="MatchId" class="form-control" />
+                <span asp-validation-for="MatchId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="Thuisploeg" class="control-label"></label>
                 <input asp-for="Thuisploeg" class="form-control" />
                 <span asp-validation-for="Thuisploeg" class="text-danger"></span>

@@ -21,9 +21,6 @@ namespace TicketVerkoop.Util.Mail
         {
             var mail = new MailMessage();  // aanmaken van een mail‐object
             mail.To.Add(new MailAddress(email));
-            MemoryStream stream = new MemoryStream(pdf);
-            Attachment data = new Attachment(stream, "information.pdf");
-            mail.Attachments.Add(data);
 
             mail.From = new
                     MailAddress("michiel.devaere101@gmail.com");  // hier komt jullie Gmail‐adres

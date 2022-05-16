@@ -22,6 +22,17 @@
         },
         "runtime": {
           "TicketVerkoop.dll": {}
+        },
+        "resources": {
+          "en/TicketVerkoop.resources.dll": {
+            "locale": "en"
+          },
+          "fr/TicketVerkoop.resources.dll": {
+            "locale": "fr"
+          },
+          "nl/TicketVerkoop.resources.dll": {
+            "locale": "nl"
+          }
         }
       },
       "AutoMapper/11.0.0": {

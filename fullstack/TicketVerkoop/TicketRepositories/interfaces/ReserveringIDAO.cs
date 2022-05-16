@@ -8,7 +8,7 @@ namespace TicketRepositories.interfaces
 {
     public interface ReserveringIDAO<T> where T : class
     {
-        Task<IEnumerable<T>> GetAll();
+        Task<IEnumerable<T>> GetAll(string userID);
         Task Add(T entity);
         Task Delete(T entity);
 

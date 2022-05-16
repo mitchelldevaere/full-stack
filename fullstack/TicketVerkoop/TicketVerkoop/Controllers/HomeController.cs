@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 using TicketService.interfaces;
@@ -15,11 +16,13 @@ namespace TicketVerkoop.Controllers
     {
         private readonly IEmailSend _sender;
         private readonly IReportService _reportService;
+        private readonly IStringLocalizer<HomeController> _localizer;
 
-        public HomeController(IEmailSend sender, IReportService reportService)
+        public HomeController(IEmailSend sender, IReportService reportService, IStringLocalizer<HomeController> localizer)
         {
             _sender = sender;
             _reportService = reportService;
+            _localizer = localizer;
         }
 
         public IActionResult Index()

@@ -8,7 +8,6 @@ namespace TicketModels.Entities
         public AspNetRole()
         {
             AspNetRoleClaims = new HashSet<AspNetRoleClaim>();
-            Users = new HashSet<AspNetUser>();
         }
 
         public string Id { get; set; } = null!;
@@ -17,7 +16,5 @@ namespace TicketModels.Entities
         public string? ConcurrencyStamp { get; set; }
 
         public virtual ICollection<AspNetRoleClaim> AspNetRoleClaims { get; set; }
-
-        public virtual ICollection<AspNetUser> Users { get; set; }
     }
 }

@@ -12,15 +12,17 @@ namespace TicketVerkoop.Controllers
     {
         private ReserveringIService<Reservering> _reserveringservice;
         private VakIService<Vak> _Vakservice;
+        private UserIService<AspNetUser> _userService;
         private readonly IMapper _mapper;
 
         private int countPlaatsen = 0;
 
-        public ShoppingcartController(IMapper mapper, ReserveringIService<Reservering> reserveringservice, VakIService<Vak> vakservice)
+        public ShoppingcartController(IMapper mapper, ReserveringIService<Reservering> reserveringservice, VakIService<Vak> vakservice, UserIService<AspNetUser> userService)
         {
             _mapper = mapper;
             _reserveringservice = reserveringservice;
             _Vakservice = vakservice;
+            _userService = userService;
         }
 
         public IActionResult Index()
@@ -63,9 +65,6 @@ namespace TicketVerkoop.Controllers
             ShoppingCartVM carts = HttpContext.Session.GetObject<ShoppingCartVM>("ShoppingCart");
             List<CartVM> cartItems = carts.Cart;
 
-            var strCurrentUserId = User.Identity.Name;
-
-
             //controle voor de datum van de aankoop
             foreach (var item in cartItems)
             {
@@ -84,7 +83,7 @@ namespace TicketVerkoop.Controllers
                         return View();
                     }
 
-                    if (t1 < t2) // vergelijken of de aankoopdatum niet meer dan 1maand voor de wedstrijd is
+                    if (t1 > t2) // vergelijken of de aankoopdatum niet meer dan 1maand voor de wedstrijd is
                     {
                         ViewBag.Message = "U kunt maximaal 1 maand voor de wedstrijd tickets kopen!";
                         return View();
@@ -98,28 +97,63 @@ namespace TicketVerkoop.Controllers
                 }
             }
 
+            //wegschrijven naar databank
             foreach (var item in cartItems)
             {
                 for (int i = 0; i < item.Aantal; i++)
                 {
+                    var vak = await _Vakservice.FindById(Convert.ToInt32(item.VakId));
+                    var plaatsen = vak.MaxPlaatsen;
+
+                    //controle geen plaatsen meer
+                    if(plaatsen == 0)
+                    {
+                        ViewBag.Message = "Het vak dat je hebt gekozen zit vol. Je zult een andere plaats moeten kiezen";
+                        return View();
+                    } 
+                    
                     if (item.Type == "Ticket")
                     {
-                        countPlaatsen = countPlaatsen + 1;
                         Reservering reservering = new Reservering
                         {
-                            UserId = null,
+                            UserId = User.Identity.Name,
+                            MatchId = item.MatchId,
+                            VakId = item.VakId,
+                            Abbonnement = null,
+                            Datum = item.Datum,
+                            Type = item.Type,
+                            Cancelled = item.Cancelled,
+                            Plaatsnummer = plaatsen
+                        };
+                        plaatsen = plaatsen - 1;
+
+                        await _reserveringservice.Add(reservering);
+                    }
+                    else if(item.Type == "Abbo")
+                    {
+                        Reservering reservering = new Reservering
+                        {
+                            UserId = User.Identity.Name,
                             MatchId = item.MatchId,
                             VakId = item.VakId,
                             Abbonnement = item.Abbonnement,
                             Datum = item.Datum,
                             Type = item.Type,
                             Cancelled = item.Cancelled,
-                            Plaatsnummer = countPlaatsen
+                            Plaatsnummer = plaatsen
                         };
-                        //await _reserveringservice.Add(reservering);
+                        plaatsen = plaatsen - 1;
+
+                        await _reserveringservice.Add(reservering);
                     }
+                    vak.MaxPlaatsen = plaatsen;
+                    await _Vakservice.Update(vak);
                 }
             }
+
+            //leegmaken winkelmandje
+            HttpContext.Session.SetObjects("ShoppingCart", null);
+
             ViewBag.Message = "Bedankt voor uw aankopen! Uw tickets zullen spoedig in uw mailbox terechtkomen!";
             return View();
         }

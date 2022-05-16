@@ -34,7 +34,7 @@ builder.Services.AddControllersWithViews()
 // in welke map zitten de resources
 builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
 
-var supportedCultures = new[] { "nl", "en", "de" };
+var supportedCultures = new[] { "nl", "en", "fr" };
 
 builder.Services.Configure<RequestLocalizationOptions>(options => {
     options.SetDefaultCulture(supportedCultures[0])
@@ -59,6 +59,12 @@ builder.Services.AddTransient<VakIDAO<Vak>, VakDAO>();
 
 builder.Services.AddTransient<ReserveringIService<Reservering>, ReserveringService>();
 builder.Services.AddTransient<ReserveringIDAO<Reservering>, ReserveringDAO>();
+
+builder.Services.AddTransient<UserIService<AspNetUser>, UserService>();
+builder.Services.AddTransient<UserIDAO<AspNetUser>, UserDAO>();
+
+builder.Services.AddTransient<SeizoenIService<Seizoen>, SeizoenService>();
+builder.Services.AddTransient<SeizoenIDAO<Seizoen>, SeizoenDAO>();
 
 builder.Services.AddTransient<IEmailSend, EmailSend>();
 builder.Services.AddTransient<IReportService, ReportService>();
@@ -89,6 +95,13 @@ else
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+var localizationOptions = new RequestLocalizationOptions()
+    .SetDefaultCulture(supportedCultures[0])
+    .AddSupportedCultures(supportedCultures)
+    .AddSupportedUICultures(supportedCultures);
+
+app.UseRequestLocalization(localizationOptions);
 
 //session
 app.UseSession();

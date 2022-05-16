@@ -23,9 +23,9 @@ namespace TicketModels.Data
         public virtual DbSet<AspNetUser> AspNetUsers { get; set; } = null!;
         public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; } = null!;
         public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; } = null!;
+        public virtual DbSet<AspNetUserRole> AspNetUserRoles { get; set; } = null!;
         public virtual DbSet<AspNetUserToken> AspNetUserTokens { get; set; } = null!;
         public virtual DbSet<Match> Matches { get; set; } = null!;
-        public virtual DbSet<Plaat> Plaats { get; set; } = null!;
         public virtual DbSet<Ploeg> Ploegs { get; set; } = null!;
         public virtual DbSet<Reservering> Reserverings { get; set; } = null!;
         public virtual DbSet<Seizoen> Seizoens { get; set; } = null!;
@@ -88,43 +88,36 @@ namespace TicketModels.Data
 
             modelBuilder.Entity<AspNetUser>(entity =>
             {
+                entity.HasKey(e => e.UserName);
+
                 entity.HasIndex(e => e.NormalizedEmail, "EmailIndex");
 
                 entity.HasIndex(e => e.NormalizedUserName, "UserNameIndex")
                     .IsUnique()
                     .HasFilter("([NormalizedUserName] IS NOT NULL)");
 
+                entity.Property(e => e.UserName)
+                    .HasMaxLength(450)
+                    .IsUnicode(false);
+
                 entity.Property(e => e.Email).HasMaxLength(256);
+
+                entity.Property(e => e.Id)
+                    .HasMaxLength(450)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.NormalizedEmail).HasMaxLength(256);
 
                 entity.Property(e => e.NormalizedUserName).HasMaxLength(256);
-
-                entity.Property(e => e.UserName).HasMaxLength(256);
-
-                entity.HasMany(d => d.Roles)
-                    .WithMany(p => p.Users)
-                    .UsingEntity<Dictionary<string, object>>(
-                        "AspNetUserRole",
-                        l => l.HasOne<AspNetRole>().WithMany().HasForeignKey("RoleId"),
-                        r => r.HasOne<AspNetUser>().WithMany().HasForeignKey("UserId"),
-                        j =>
-                        {
-                            j.HasKey("UserId", "RoleId");
-
-                            j.ToTable("AspNetUserRoles");
-
-                            j.HasIndex(new[] { "RoleId" }, "IX_AspNetUserRoles_RoleId");
-                        });
             });
 
             modelBuilder.Entity<AspNetUserClaim>(entity =>
             {
                 entity.HasIndex(e => e.UserId, "IX_AspNetUserClaims_UserId");
 
-                entity.HasOne(d => d.User)
-                    .WithMany(p => p.AspNetUserClaims)
-                    .HasForeignKey(d => d.UserId);
+                entity.Property(e => e.UserId)
+                    .HasMaxLength(450)
+                    .IsUnicode(false);
             });
 
             modelBuilder.Entity<AspNetUserLogin>(entity =>
@@ -137,22 +130,37 @@ namespace TicketModels.Data
 
                 entity.Property(e => e.ProviderKey).HasMaxLength(128);
 
-                entity.HasOne(d => d.User)
-                    .WithMany(p => p.AspNetUserLogins)
-                    .HasForeignKey(d => d.UserId);
+                entity.Property(e => e.UserId)
+                    .HasMaxLength(450)
+                    .IsUnicode(false);
+            });
+
+            modelBuilder.Entity<AspNetUserRole>(entity =>
+            {
+                entity.HasNoKey();
+
+                entity.HasIndex(e => e.RoleId, "IX_AspNetUserRoles_RoleId");
+
+                entity.Property(e => e.UserId)
+                    .HasMaxLength(450)
+                    .IsUnicode(false);
+
+                entity.HasOne(d => d.Role)
+                    .WithMany()
+                    .HasForeignKey(d => d.RoleId);
             });
 
             modelBuilder.Entity<AspNetUserToken>(entity =>
             {
-                entity.HasKey(e => new { e.UserId, e.LoginProvider, e.Name });
+                entity.HasNoKey();
 
                 entity.Property(e => e.LoginProvider).HasMaxLength(128);
 
                 entity.Property(e => e.Name).HasMaxLength(128);
 
-                entity.HasOne(d => d.User)
-                    .WithMany(p => p.AspNetUserTokens)
-                    .HasForeignKey(d => d.UserId);
+                entity.Property(e => e.UserId)
+                    .HasMaxLength(450)
+                    .IsUnicode(false);
             });
 
             modelBuilder.Entity<Match>(entity =>
@@ -188,24 +196,6 @@ namespace TicketModels.Data
                     .HasConstraintName("FK_Match_Ploeg1");
             });
 
-            modelBuilder.Entity<Plaat>(entity =>
-            {
-                entity.HasKey(e => e.PlaatsId);
-
-                entity.Property(e => e.PlaatsId)
-                    .ValueGeneratedNever()
-                    .HasColumnName("PlaatsID");
-
-                entity.Property(e => e.StadionId).HasColumnName("StadionID");
-
-                entity.Property(e => e.VakId).HasColumnName("VakID");
-
-                entity.HasOne(d => d.Vak)
-                    .WithMany(p => p.Plaats)
-                    .HasForeignKey(d => d.VakId)
-                    .HasConstraintName("FK_Plaats_Vak");
-            });
-
             modelBuilder.Entity<Ploeg>(entity =>
             {
                 entity.ToTable("Ploeg");
@@ -239,6 +229,7 @@ namespace TicketModels.Data
 
                 entity.Property(e => e.UserId)
                     .HasMaxLength(450)
+                    .IsUnicode(false)
                     .HasColumnName("UserID");
 
                 entity.Property(e => e.VakId).HasColumnName("VakID");
@@ -259,11 +250,6 @@ namespace TicketModels.Data
                     .HasConstraintName("FK_Reservering_AspNetUsers");
 
                 entity.HasOne(d => d.Vak)
-                    .WithMany(p => p.Reserverings)
-                    .HasForeignKey(d => d.VakId)
-                    .HasConstraintName("FK_Reservering_Plaats");
-
-                entity.HasOne(d => d.VakNavigation)
                     .WithMany(p => p.Reserverings)
                     .HasForeignKey(d => d.VakId)
                     .HasConstraintName("FK_Reservering_Vak1");

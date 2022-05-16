@@ -9,7 +9,7 @@ namespace TicketService.interfaces
 {
     public interface ReserveringIService<T> where T : class
     {
-        Task<IEnumerable<T>> GetAll();
+        Task<IEnumerable<T>> GetAll(string userID);
         Task Add(T entity);
         Task Delete(T entity);
 

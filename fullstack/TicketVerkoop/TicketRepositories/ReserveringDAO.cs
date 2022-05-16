@@ -37,19 +37,55 @@ namespace TicketRepositories
             throw new NotImplementedException();
         }
 
-        public Task<Reservering> FindById(int Id)
+        public async Task<Reservering> FindById(int Id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return await _dbContext.Reserverings
+                    .Where(b => b.ReserveringId == Id)
+                    .FirstOrDefaultAsync();
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error in DAO");
+                throw new Exception("error DAO beer");
+
+            }
         }
 
-        public Task<IEnumerable<Reservering>> GetAll()
+        public async Task<IEnumerable<Reservering>> GetAll(string userID)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return await _dbContext.Reserverings
+                    .Include(b => b.User)
+                    .Include(b => b.Vak)
+                    .Include(b => b.Match)
+                    .Include(b => b.AbbonnementNavigation)
+                    .Where(b => b.UserId == userID)
+                    .ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error in DAO");
+                throw new Exception("error DAO beer");
+
+            }
         }
 
-        public Task Update(Reservering entity)
+        public async Task Update(Reservering entity)
         {
-            throw new NotImplementedException();
+            _dbContext.Entry(entity).State = EntityState.Modified;
+            try
+            {
+                await _dbContext.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                throw new Exception("error in DAO");
+            }
         }
     }
 }

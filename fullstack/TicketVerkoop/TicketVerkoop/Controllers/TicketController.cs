@@ -14,6 +14,8 @@ namespace TicketVerkoop.Controllers
         private VakIService<Vak> _vakService;
         private readonly IMapper _mapper;
 
+        private Match currentMatch;
+
         public TicketController(IMapper mapper, IService<Match> matchservice, VakIService<Vak> vakService)
         {
             _mapper = mapper;
@@ -35,6 +37,8 @@ namespace TicketVerkoop.Controllers
                 return NotFound();
             }
 
+            currentMatch = await _matchService.FindById(Convert.ToInt16(id));
+
             var match = await _matchService.FindById(Convert.ToInt16(id));
             MatchVM matchVM = _mapper.Map<MatchVM>(match);
 
@@ -50,10 +54,9 @@ namespace TicketVerkoop.Controllers
                 Datum = matchVM.Datum,
                 Stadion = matchVM.StadionNaam,
                 Aantal = 0,
-                Vaknaam = null,
                 Type = "Ticket",
                 Cancelled = false,
-                MatchId = match.MatchId
+                MatchId = currentMatch.MatchId
             };
 
             return View(reservering);

@@ -63,9 +63,18 @@ namespace TicketRepositories
             }
         }
 
-        public Task Update(Vak entity)
+        public async Task Update(Vak entity)
         {
-            throw new NotImplementedException();
+            _dbContext.Entry(entity).State = EntityState.Modified;
+            try
+            {
+                await _dbContext.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                throw new Exception("error in DAO");
+            }
         }
     }
 }

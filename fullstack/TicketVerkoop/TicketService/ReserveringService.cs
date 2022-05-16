@@ -28,19 +28,19 @@ namespace TicketService
             throw new NotImplementedException();
         }
 
-        public Task<Reservering> FindById(int Id)
+        public async Task<Reservering> FindById(int Id)
         {
-            throw new NotImplementedException();
+            return await _reserveringDAO.FindById(Id);
         }
 
-        public Task<IEnumerable<Reservering>> GetAll()
+        public async Task<IEnumerable<Reservering>> GetAll(string userID)
         {
-            throw new NotImplementedException();
+            return await _reserveringDAO.GetAll(userID);
         }
 
-        public Task Update(Reservering entity)
+        public async Task Update(Reservering entity)
         {
-            throw new NotImplementedException();
+            await _reserveringDAO.Update(entity);
         }
     }
 }

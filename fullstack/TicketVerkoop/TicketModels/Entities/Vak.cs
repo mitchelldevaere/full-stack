@@ -7,7 +7,6 @@ namespace TicketModels.Entities
     {
         public Vak()
         {
-            Plaats = new HashSet<Plaat>();
             Reserverings = new HashSet<Reservering>();
         }
 
@@ -18,7 +17,6 @@ namespace TicketModels.Entities
         public int? MaxPlaatsen { get; set; }
 
         public virtual Stadion? Stadion { get; set; }
-        public virtual ICollection<Plaat> Plaats { get; set; }
         public virtual ICollection<Reservering> Reserverings { get; set; }
     }
 }

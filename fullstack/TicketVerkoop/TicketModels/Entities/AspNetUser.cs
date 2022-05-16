@@ -7,15 +7,11 @@ namespace TicketModels.Entities
     {
         public AspNetUser()
         {
-            AspNetUserClaims = new HashSet<AspNetUserClaim>();
-            AspNetUserLogins = new HashSet<AspNetUserLogin>();
-            AspNetUserTokens = new HashSet<AspNetUserToken>();
             Reserverings = new HashSet<Reservering>();
-            Roles = new HashSet<AspNetRole>();
         }
 
         public string Id { get; set; } = null!;
-        public string? UserName { get; set; }
+        public string UserName { get; set; } = null!;
         public string? NormalizedUserName { get; set; }
         public string? Email { get; set; }
         public string? NormalizedEmail { get; set; }
@@ -30,11 +26,6 @@ namespace TicketModels.Entities
         public bool LockoutEnabled { get; set; }
         public int AccessFailedCount { get; set; }
 
-        public virtual ICollection<AspNetUserClaim> AspNetUserClaims { get; set; }
-        public virtual ICollection<AspNetUserLogin> AspNetUserLogins { get; set; }
-        public virtual ICollection<AspNetUserToken> AspNetUserTokens { get; set; }
         public virtual ICollection<Reservering> Reserverings { get; set; }
-
-        public virtual ICollection<AspNetRole> Roles { get; set; }
     }
 }

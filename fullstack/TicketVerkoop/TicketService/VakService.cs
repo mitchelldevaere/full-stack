@@ -38,9 +38,9 @@ namespace TicketService
             return await _vakDAO.GetAll(id);
         }
 
-        public Task Update(Vak entity)
+        public async Task Update(Vak entity)
         {
-            throw new NotImplementedException();
+            await _vakDAO.Update(entity);
         }
     }
 }
