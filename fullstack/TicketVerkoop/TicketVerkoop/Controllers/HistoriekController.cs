@@ -40,6 +40,17 @@ namespace TicketVerkoop.Controllers
 
             var reservering = await _reserveringhService.FindById(Convert.ToInt32(id));
 
+            if(reservering.Type == "Ticket")
+            {
+                DateTime t1 = DateTime.Now.AddDays(7);
+                DateTime t2 = Convert.ToDateTime(reservering.Datum);
+
+                if (t1 > t2)
+                {
+                    ViewBag.Message = "Er zal een kost zijn als je die Tickets nu annuleert!";
+                }
+            }
+
             var vak = await _VakService.FindById(Convert.ToInt32(reservering.VakId));
             vak.MaxPlaatsen = vak.MaxPlaatsen + 1;
             await _VakService.Update(vak);

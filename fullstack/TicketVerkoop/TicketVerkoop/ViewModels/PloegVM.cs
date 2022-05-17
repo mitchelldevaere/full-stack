@@ -4,6 +4,6 @@
     {
         public int PloegId { get; set; }
         public string? PloegNaam { get; set; }
-        public int? StadionId { get; set; }
+        public string? StadionNaam { get; set; }
     }
 }

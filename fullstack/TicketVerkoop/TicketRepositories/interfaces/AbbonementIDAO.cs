@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace TicketRepositories.interfaces
 {
-    public interface PloegIDAO<T> where T : class
+    public interface AbbonementIDAO<T> where T : class
     {
-        Task<IEnumerable<T>> GetAll();
+        Task<IEnumerable<T>> GetAll(int id);
         Task Add(T entity);
         Task Delete(T entity);
 
         Task Update(T entity);
-        Task<T> FindById(int Id);
-        Task<T> FindByName(string name);
+        Task<T> FindById(int ploegID, int seizoenID);
     }
 }

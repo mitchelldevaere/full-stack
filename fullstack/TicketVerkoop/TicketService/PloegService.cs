@@ -13,9 +13,9 @@ namespace TicketService
     {
         private PloegIDAO<Ploeg> _PloegDAO;
 
-        public PloegService(PloegIDAO<Ploeg> _PloegDAO) // DI
+        public PloegService(PloegIDAO<Ploeg> PloegDAO) // DI
         {
-                _PloegDAO = _PloegDAO;
+            _PloegDAO = PloegDAO;
         }
 
         public Task Add(Ploeg entity)
@@ -28,9 +28,14 @@ namespace TicketService
             throw new NotImplementedException();
         }
 
-        public Task<Ploeg> FindById(int Id)
+        public async Task<Ploeg> FindById(int Id)
         {
-            throw new NotImplementedException();
+            return await _PloegDAO.FindById(Id);
+        }
+
+        public async Task<Ploeg> FindByName(string name)
+        {
+            return await _PloegDAO.FindByName(name);
         }
 
         public async Task<IEnumerable<Ploeg>> GetAll()

@@ -12,9 +12,6 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.ReserveringId)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Thuisploeg)
             </th>
             <th>
@@ -39,10 +36,7 @@
                 @Html.DisplayNameFor(model => model.Cancelled)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.MatchId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UserId)
+                @Html.DisplayNameFor(model => model.Prijs)
             </th>
             <th></th>
         </tr>
@@ -50,9 +44,6 @@
     <tbody>
         @foreach (var item in Model) {
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ReserveringId)
-                </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Thuisploeg)
                 </td>
@@ -78,10 +69,7 @@
                     @Html.DisplayFor(modelItem => item.Cancelled)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.MatchId)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.UserId)
+                    @Html.DisplayFor(modelItem => item.Prijs)
                 </td>
                 <td>
                     @if(item.Cancelled == false){
@@ -96,5 +84,7 @@
 {
     @Html.Raw("Je hebt nog geen Tickets besteld");
 }
+
+<h2>@ViewBag.Message</h2>
 
 

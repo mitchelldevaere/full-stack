@@ -25,6 +25,10 @@ namespace TicketVerkoop.Automapper
 
             CreateMap<ReserveringVM, Reservering>();
 
+            CreateMap<Seizoen, SeizoenVM>();
+
+            CreateMap<Ploeg, PloegVM>().ForMember(dest => dest.StadionNaam, opts => opts.MapFrom(src => src.Stadion.StadionNaam));
+
         }
     }
 }

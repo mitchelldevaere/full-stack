@@ -53,8 +53,6 @@ namespace TicketModels.Data
 
                 entity.Property(e => e.SeizoenId).HasColumnName("SeizoenID");
 
-                entity.Property(e => e.UserId).HasColumnName("UserID");
-
                 entity.HasOne(d => d.Ploeg)
                     .WithMany(p => p.Abbonements)
                     .HasForeignKey(d => d.PloegId)

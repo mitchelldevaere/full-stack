@@ -14,6 +14,7 @@ namespace TicketModels.Entities
         public string? Type { get; set; }
         public bool? Cancelled { get; set; }
         public int? Plaatsnummer { get; set; }
+        public float? Prijs { get; set; }
 
         public virtual Abbonement? AbbonnementNavigation { get; set; }
         public virtual Match? Match { get; set; }

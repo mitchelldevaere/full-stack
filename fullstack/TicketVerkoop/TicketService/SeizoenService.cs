@@ -28,9 +28,9 @@ namespace TicketService
             throw new NotImplementedException();
         }
 
-        public Task<Seizoen> FindById(int Id)
+        public async Task<Seizoen> FindById(int Id)
         {
-            throw new NotImplementedException();
+            return await _seizoenDAO.FindById(Id);
         }
 
         public async Task<IEnumerable<Seizoen>> GetAll()

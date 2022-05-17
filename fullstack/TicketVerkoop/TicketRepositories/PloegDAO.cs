@@ -28,9 +28,40 @@ namespace TicketRepositories
             throw new NotImplementedException();
         }
 
-        public Task<Ploeg> FindById(int Id)
+        public async Task<Ploeg> FindById(int Id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return await _dbContext.Ploegs
+                    .Include(b => b.Stadion)
+                    .Where(b => b.PloegId == Id)
+                    .FirstOrDefaultAsync();
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error in DAO");
+                throw new Exception("error DAO beer");
+
+            }
+        }
+
+        public async Task<Ploeg> FindByName(string name)
+        {
+            try
+            {
+                return await _dbContext.Ploegs
+                    .Include(b => b.Stadion)
+                    .Where(b => b.PloegNaam == name)
+                    .FirstOrDefaultAsync();
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error in DAO");
+                throw new Exception("error DAO beer");
+
+            }
         }
 
         public async Task<IEnumerable<Ploeg>> GetAll()
@@ -38,7 +69,8 @@ namespace TicketRepositories
             try
             {
                 return await _dbContext.Ploegs
-                    .ToListAsync(); // volgende Namespaces toevoegen bovenaan using System.Linq; using Microsoft.EntityFrameworkCore;
+                    .Include(b => b.Stadion)
+                    .ToListAsync();
             }
             catch (Exception ex)
             {

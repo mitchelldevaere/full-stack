@@ -54,6 +54,9 @@ builder.Services.AddTransient<TicketVerkoopDbContext, TicketVerkoopDbContext>();
 builder.Services.AddTransient<IService<Match>, MatchService>();
 builder.Services.AddTransient<IDAO<Match>, MatchDAO>();
 
+builder.Services.AddTransient<PloegIService<Ploeg>, PloegService>();
+builder.Services.AddTransient<PloegIDAO<Ploeg>, PloegDAO>();
+
 builder.Services.AddTransient<VakIService<Vak>, VakService>();
 builder.Services.AddTransient<VakIDAO<Vak>, VakDAO>();
 
@@ -65,6 +68,9 @@ builder.Services.AddTransient<UserIDAO<AspNetUser>, UserDAO>();
 
 builder.Services.AddTransient<SeizoenIService<Seizoen>, SeizoenService>();
 builder.Services.AddTransient<SeizoenIDAO<Seizoen>, SeizoenDAO>();
+
+builder.Services.AddTransient<AbbonementIService<Abbonement>, AbbonementService>();
+builder.Services.AddTransient<AbbonementIDAO<Abbonement>, AbbonementDAO>();
 
 builder.Services.AddTransient<IEmailSend, EmailSend>();
 builder.Services.AddTransient<IReportService, ReportService>();

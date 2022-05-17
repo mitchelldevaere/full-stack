@@ -12,7 +12,6 @@ namespace TicketModels.Entities
 
         public int AbbonementId { get; set; }
         public int? PloegId { get; set; }
-        public int? UserId { get; set; }
         public int? SeizoenId { get; set; }
 
         public virtual Ploeg? Ploeg { get; set; }

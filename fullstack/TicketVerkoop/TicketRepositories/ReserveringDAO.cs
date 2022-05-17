@@ -74,6 +74,27 @@ namespace TicketRepositories
             }
         }
 
+        public async Task<IEnumerable<Reservering>> GetAllTrue(string userID, bool cancelled)
+        {
+            try
+            {
+                return await _dbContext.Reserverings
+                    .Include(b => b.User)
+                    .Include(b => b.Vak)
+                    .Include(b => b.Match)
+                    .Include(b => b.AbbonnementNavigation)
+                    .Where(b => b.UserId == userID)
+                    .Where(b => b.Cancelled == cancelled)
+                    .ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error in DAO");
+                throw new Exception("error DAO beer");
+
+            }
+        }
+
         public async Task Update(Reservering entity)
         {
             _dbContext.Entry(entity).State = EntityState.Modified;

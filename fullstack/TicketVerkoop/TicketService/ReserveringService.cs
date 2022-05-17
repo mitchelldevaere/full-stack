@@ -38,6 +38,11 @@ namespace TicketService
             return await _reserveringDAO.GetAll(userID);
         }
 
+        public async Task<IEnumerable<Reservering>> GetAllTrue(string userID, bool cancelled)
+        {
+            return await _reserveringDAO.GetAllTrue(userID, cancelled);
+        }
+
         public async Task Update(Reservering entity)
         {
             await _reserveringDAO.Update(entity);

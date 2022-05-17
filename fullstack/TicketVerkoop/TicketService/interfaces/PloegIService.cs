@@ -14,5 +14,6 @@ namespace TicketService.interfaces
 
         Task Update(T entity);
         Task<T> FindById(int Id);
+        Task<T> FindByName(string name);
     }
 }
