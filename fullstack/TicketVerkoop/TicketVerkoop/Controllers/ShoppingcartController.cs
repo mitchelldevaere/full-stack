@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using TicketModels.Entities;
 using TicketService.interfaces;
 using TicketVerkoop.Extensions;
+using TicketVerkoop.Util.Mail;
 using TicketVerkoop.ViewModels;
 
 namespace TicketVerkoop.Controllers
@@ -14,11 +15,12 @@ namespace TicketVerkoop.Controllers
         private VakIService<Vak> _Vakservice;
         private UserIService<AspNetUser> _userService;
         private SeizoenIService<Seizoen> _seizoenService;
+        private readonly IEmailSend _sender;
         private readonly IMapper _mapper;
 
         private int countPlaatsen = 0;
 
-        public ShoppingcartController(IMapper mapper, ReserveringIService<Reservering> reserveringservice, VakIService<Vak> vakservice, UserIService<AspNetUser> userService, SeizoenIService<Seizoen> seizoenService)
+        public ShoppingcartController(IMapper mapper, ReserveringIService<Reservering> reserveringservice, VakIService<Vak> vakservice, UserIService<AspNetUser> userService, SeizoenIService<Seizoen> seizoenService, IEmailSend sender)
         {
             _mapper = mapper;
             _reserveringservice = reserveringservice;
@@ -168,7 +170,8 @@ namespace TicketVerkoop.Controllers
                             Datum = item.Datum,
                             Type = item.Type,
                             Cancelled = item.Cancelled,
-                            Plaatsnummer = plaatsen
+                            Plaatsnummer = plaatsen,
+                            Prijs = item.Prijs
                         };
                         plaatsen = plaatsen - 1;
 
@@ -186,6 +189,24 @@ namespace TicketVerkoop.Controllers
             //leegmaken winkelmandje
             HttpContext.Session.SetObjects("ShoppingCart", null);
 
+
+            //email versturen
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    //var pdfFile = _reportService.GeneratePDFReport();
+                    var subject = "Voucher voor de Tickets";
+                    var message = "hier zie je de tickets die je hebt aangekocht";
+
+                    _sender.SendEmailAsync(User.Identity.Name, subject, message, null);
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception(ex.ToString());
+
+                }
+            }
             ViewBag.Message = "Bedankt voor uw aankopen! Uw aankopen zullen spoedig in uw mailbox terechtkomen!";
             return View();
         }
