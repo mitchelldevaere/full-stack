@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XyoOF7DjMbSJY7RoZaYvO6ndf86DIo5DrADqWPTV4uY=",
+  "Hash": "bSqxu3DDx6GqWImLepWvHRxPAumr3gtWaqomJMHbHSw=",
   "Source": "TicketVerkoop",
   "BasePath": "_content/TicketVerkoop",
   "Mode": "Default",
@@ -1122,6 +1122,23 @@
       "OriginalItemSpec": "wwwroot\\img\\deleteButton.png"
     },
     {
+      "Identity": "C:\\Users\\michi\\Desktop\\school\\jaar 2\\full stack\\eindopdracht\\opdracht\\full-stack\\fullstack\\TicketVerkoop\\TicketVerkoop\\wwwroot\\img\\Michiel.jpg",
+      "SourceId": "TicketVerkoop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\michi\\Desktop\\school\\jaar 2\\full stack\\eindopdracht\\opdracht\\full-stack\\fullstack\\TicketVerkoop\\TicketVerkoop\\wwwroot\\",
+      "BasePath": "_content/TicketVerkoop",
+      "RelativePath": "img/Michiel.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Michiel.jpg"
+    },
+    {
       "Identity": "C:\\Users\\michi\\Desktop\\school\\jaar 2\\full stack\\eindopdracht\\opdracht\\full-stack\\fullstack\\TicketVerkoop\\TicketVerkoop\\wwwroot\\img\\page_background.jpg",
       "SourceId": "TicketVerkoop",
       "SourceType": "Discovered",
@@ -1137,6 +1154,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\page_background.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\michi\\Desktop\\school\\jaar 2\\full stack\\eindopdracht\\opdracht\\full-stack\\fullstack\\TicketVerkoop\\TicketVerkoop\\wwwroot\\img\\Ruben.jpg",
+      "SourceId": "TicketVerkoop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\michi\\Desktop\\school\\jaar 2\\full stack\\eindopdracht\\opdracht\\full-stack\\fullstack\\TicketVerkoop\\TicketVerkoop\\wwwroot\\",
+      "BasePath": "_content/TicketVerkoop",
+      "RelativePath": "img/Ruben.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Ruben.jpg"
     },
     {
       "Identity": "C:\\Users\\michi\\Desktop\\school\\jaar 2\\full stack\\eindopdracht\\opdracht\\full-stack\\fullstack\\TicketVerkoop\\TicketVerkoop\\wwwroot\\js\\site.js",
