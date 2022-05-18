@@ -1,0 +1,40 @@
+﻿@model IEnumerable<TicketVerkoop.ViewModels.PloegVM>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PloegId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PloegNaam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StadionNaam)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PloegId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PloegNaam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StadionNaam)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Details", new {  id=item.PloegId  }) |
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

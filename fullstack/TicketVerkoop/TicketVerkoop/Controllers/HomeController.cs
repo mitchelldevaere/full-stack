@@ -69,5 +69,10 @@ namespace TicketVerkoop.Controllers
 
             return LocalRedirect(returnUrl);
         }
+
+        public IActionResult Info()
+        {
+            return View();
+        }
     }
 }
